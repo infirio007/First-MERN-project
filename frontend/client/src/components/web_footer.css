@@ -1,0 +1,78 @@
+body{
+    height: 100%;
+}
+
+footer{
+    width: 100vw;
+    padding-bottom: 1%;
+    background: #000000;
+}
+
+#logo-foot{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#qoute{
+    color: white;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    width: 100vw;
+    padding: 0 10%;
+}
+
+.facebook img{
+    background: white;
+    border-radius: 50%;
+}
+
+.icons h3{
+    color: white;
+}
+
+#follow{
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#slogan{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (max-width: 536px){
+    #logo-foot{
+        font-size: 30px;
+    }
+    #qoute{
+        font-size: 17px;
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 398px){
+    #follow{
+        font-size: 20px;
+    }
+    .icons h3{
+        font-size: 16px;
+    }
+    #slogan{
+        font-size: 18px;
+    }
+}

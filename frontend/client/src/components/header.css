@@ -1,0 +1,246 @@
+.title{
+    text-align: center;
+    color:white;
+    font-family: "poplin";
+    font-size:7rem;
+}
+
+body::-webkit-scrollbar{
+    background: #313131;
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(245, 68, 37),rgb(238, 31, 93));
+    border-radius: 15px;
+    /* background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%); */
+
+}
+
+*{
+    outline: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;     
+    -webkit-user-select: none;  
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+    outline: none;
+    /* cursor: url("https://icons.iconarchive.com/icons/chrisl21/minecraft/32/Diamond-Sword-icon.png"), auto; */
+}
+
+.video{
+    margin: auto;
+    width: 100vw;
+    height: initial;
+}
+
+#ham{
+    display: none;
+}
+
+#id{
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    /* background-color: black; */
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: 100px;
+}
+
+.normal{
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.active{
+    background-color: rgba(0,0,0,0.7);
+}
+
+#logo{
+    width: 40%;
+    /* border: 2px solid white; */
+    font-size: xx-large;
+    text-align: center;
+    
+}
+
+.navigation{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nope{
+    display: flex;
+    flex-direction: column;
+}
+
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation li{
+    cursor: pointer;
+    list-style: none;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    width: 25%;
+    font-size: large;
+    /* border: 2px solid black; */
+}
+
+.navigation li::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: linear-gradient(white, transparent);
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 90px;
+    transition: all 0.5s ease-out;
+}
+
+.hover:hover.hover::after{
+    width: 14%;
+}
+
+.hover:active.hover::after{
+    width: 14%;
+}
+
+.background{
+    /* background: url("Lighthouse.jpg"); */
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.headerSection{
+    position: relative;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.black{
+    background: black;
+}
+
+@media screen and (max-width: 992px){
+    .navigation li{
+        font-size: large;
+    }
+
+    .video{
+        width: fit-content;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        /* height: 10vh; */
+    }
+
+    #logo{
+        /* position: absolute;
+        top: 0; */
+        height: 10vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #ham{
+        display: inline;
+        cursor: pointer;
+    }
+
+    .navigation{
+        display: none;
+        position: absolute;
+        top: 10vh;
+        width: 100vw;
+        height: 80vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* display: none; */
+    }
+
+    .navigation{
+        position: absolute;
+        top: 101px;
+    }
+
+    .navigation li{
+        width: 90%;
+        text-align: center;
+        height: 25%;
+        margin: auto;
+        border-top: 1px solid black;
+        align-items: center;
+        /* padding-top: 5vh; */
+    }
+
+    .navigation li::after{
+        position: static;
+        top: 10px;
+    }
+
+    .hover:hover.hover::after{
+        width: 100%;
+    }
+
+    .hover:active.hover::after{
+        width: 100%;
+    }
+
+    .nope{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .title{
+        font-size: 3rem;
+    }
+}

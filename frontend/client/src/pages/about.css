@@ -1,0 +1,137 @@
+.my-intro{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(55, 55, 55);
+    background-image: url("about_me.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items:; */
+}
+
+body{
+    background: #f1f1f1;
+}
+
+.my-intro h1{
+    width: 50%;
+    /* border: 2px solid black; */
+    /* position: absolute; */
+    color: white;
+    text-align: left;
+    padding:0 1% 1% 1%;
+    font-size: 28px;
+}
+
+.abot{
+    display: inline;
+}
+
+.my-intro p {
+    margin-left: 1%;
+    color: white;
+    /* margin-bottom: 5%; */
+    width: 45%;
+}
+
+.stats{
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.stats h1{
+    text-align: center;
+    color: white;
+}
+
+.stats h2{
+    color: white;
+    margin-left: 15%;
+}
+
+.stats span{
+    width: 80vw;
+    position: relative;
+    background: grey;
+    border-radius: 10px;
+    margin-left: 10%;
+    height: 20px;
+}
+
+.stats span:after{
+    position: absolute;
+    content: '';
+    width: 60vw;
+    display: block;
+    top: 2px;
+    left: 3px;
+    height: 15px;
+    border-radius: 10px;
+    background: blue;
+    animation: anime linear 1s;
+}
+
+@keyframes anime{
+    0%{
+        width: 0;
+    }
+    25%{
+        width: 20vw;
+    }
+    30%{
+        width: 40vw;
+    }
+    80%{
+        width: 47vw;
+    }
+    100%{
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 818px){
+    .my-intro{
+        background: none;
+        /* background-position: center;
+        background-size: cover; */
+    }
+
+    .abot{
+        display: none;
+    }
+
+    .stats h2{
+        font-size: 20px;
+    }
+
+    .stats h1{
+        font-size: 24px;
+    }
+
+    .my-intro h1{
+        width: 100vw;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+    }
+
+    .my-intro p{
+        width: 100vw;
+        padding:1% 5%;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 328px){
+    .my-intro h1{
+        font-size: 20px;
+    }
+}
