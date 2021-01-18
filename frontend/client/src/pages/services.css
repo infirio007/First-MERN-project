@@ -18,6 +18,9 @@
 
 .repo h1{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 70px;
     font-size: 23px;
 }
